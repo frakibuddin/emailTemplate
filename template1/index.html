@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ESPORTS CLUB!</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: Montserrat, sans-serif;
+        }
+
+        body {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .shadow {
+            position: relative;
+        }
+
+        .shadow::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            width: 300px;
+            height: 300px;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(18 124 255 / 70%)), to(rgba(0, 0, 0, 1)));
+            background-image: -o-linear-gradient(rgb(18 124 255 / 70%), rgba(0, 0, 0, 1));
+            background-image: linear-gradient(rgb(18 124 255 / 70%), rgba(0, 0, 0, 1));
+            z-index: -1;
+            -webkit-transform: translateX(60px) rotate(110deg);
+            -ms-transform: translateX(60px) rotate(110deg);
+            transform: translateX(60px) rotate(110deg);
+            border-radius: 15px;
+        }
+
+        .shadow::before {
+            content: "";
+            position: absolute;
+            left: -180px;
+            top: -200px;
+            width: 200px;
+            height: 500px;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 1)));
+            background-image: -o-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+            background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+            z-index: -1;
+            -webkit-transform: rotate(20deg);
+            -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+        }
+
+        .shadow-2 {
+            position: relative;
+        }
+
+        .shadow-2::before {
+            content: "";
+            position: absolute;
+            left: -126px;
+            top: 0;
+            width: 402px;
+            height: 700px;
+            background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 1)));
+            background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+            background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+            z-index: -1;
+            -webkit-transform: rotate(20deg);
+            -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+            border-radius: 15px;
+        }
+
+        .template {
+            max-width: 800px;
+            margin: auto;
+            background-image: url(img/Mask-Group44.png), -webkit-gradient(linear, left top, left bottom, from(#03253b), to(#03253bee));
+            background-image: url(img/Mask-Group44.png), -o-linear-gradient(#03253b, #03253bee);
+            background-image: url(img/Mask-Group44.png), linear-gradient(#03253b, #03253bee);
+            background-size: cover;
+            background-position: left;
+            padding: 20px 5px;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 5px 5px 5px 50px;
+        }
+
+        .main-heding {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 10px;
+            margin: 25px 0;
+            padding-bottom: 20px;
+        }
+
+        .main-heding p {
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .content .name {
+            background: #cc203d;
+            padding: 4px 15px 4px 6px;
+            border-radius: 3px;
+        }
+
+        .content p {
+            margin: 25px 0;
+            letter-spacing: 0.5px;
+            line-height: 1.7;
+        }
+
+        .a-link {
+            text-decoration: none;
+            color: #0088ff;
+        }
+
+        .footer {
+            padding-top: 35px;
+        }
+
+        .small-text {
+            font-size: 12px;
+            letter-spacing: 0.7px;
+            color: #3f6094;
+        }
+
+        .social-icon {
+            margin-top: 15px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .social-icon a {
+            margin-right: 15px;
+        }
+
+        .share-icon {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+
+            margin-top: 50px;
+        }
+
+        .share-icon a {
+            margin: 0 10px;
+        }
+
+        .share-icon a img {
+            width: 20px;
+        }
+
+        .share-icon p {
+            font-size: 18px;
+        }
+
+
+
+        @media screen and (max-width: 400px) {
+            .container {
+                padding: 5px 5px 5px 20px;
+            }
+
+            .logo img {
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="template">
+        <div class="container">
+            <div class="shadow">
+                <div class="logo">
+                    <img src="img/TEC-Color.png" alt="">
+                </div>
+                <div class="main-heding">
+                    <img src="img/4046321.png" alt="">
+                    <p>Welcome to <br> The Esports Club!</p>
+                </div>
+            </div>
+            <div class="shadow-2">
+                <div class="content">
+                    <p>Hi, <span class="name">Sai Narine</span></p>
+                    <p>Welcome to The Esports Club® (TEC). We're thrilled to see you here!</p>
+                    <p>We built our Esports Platform for you to discover, explore and participate in your favorite
+                        Esport
+                        tournaments. </p>
+                    <p>As next steps we request you to take few minutes and complete your profile that helps us to know
+                        you
+                        better <a class="a-link" href="">#Go To Profile</a></p>
+                </div>
+                <div class="footer">
+                    <p class="small-text">Please join our social media channels to stay up-to-date on all our
+                        tournaments
+                        and updates -</p>
+                    <div class="social-icon">
+                        <a href=""><img src="img/whatsapp.png" alt=""></a>
+                        <a href=""><img src="img/instgram.png" alt=""></a>
+                        <a href=""><img src="img/dukduk.png" alt=""></a>
+                        <a href=""><img src="img/twtter.png" alt=""></a>
+                    </div>
+                    <div class="share-icon">
+                        <p>SHARE :</p>
+                        <a href=""><img src="img/mail.png" alt=""></a>
+                        <a href=""><img src="img/whatsapp1.png" alt=""></a>
+                        <a href=""><img src="img/facebook.png" alt=""></a>
+                        <a href=""><img src="img/twitter.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
